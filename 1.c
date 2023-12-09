@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <string.h>
-
 int main()
 {
     char s[1000];
@@ -20,5 +18,5 @@ int main()
 
     printf("Number of words in the string: %d\n", words);
 
-m    return 0;
+    return 0;
 }
