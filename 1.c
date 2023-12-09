@@ -1,13 +1,24 @@
-
 #include <stdio.h>
-int main(){
-    char str[100];
-    int i, count = 0;
+#include <string.h>
+
+int main()
+{
+    char s[1000];
+    int i, words = 0;
+
     printf("Enter the string: ");
-    scanf("%[^\n]s", str);
-    for(i = 0; str[i] != '\0'; i++){
-        count++;
+    scanf("%[^\n]s", s);
+
+    for (i = 0; s[i]; i++)
+    {
+        if (s[i] == ' ')
+            words++;
     }
-    printf("Number of words in the string: %d\n", count);
-    return 0;
+
+    if (i > 0)
+        words++;
+
+    printf("Number of words in the string: %d\n", words);
+
+m    return 0;
 }
